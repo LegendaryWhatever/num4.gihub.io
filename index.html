@@ -1,0 +1,170 @@
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание4 для WEB</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- шапка -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          Gaya_JK
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#form">Форма</a>
+            <a class="nav-link" href="#table">Таблица</a>
+            <a class="nav-link" href="#footer">Подвал</a>
+            <a class="nav-link" href="https://vk.com/gaya_jk">VK</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="content">
+    <div class="container d-flex flex-column">
+      <!-- ссылки -->
+      <div class="card mt-3 mb-3 p-5 order-1">
+        <h3 class="text-center">Список гипперссылок</h3>
+        <div class="list-group">
+          <a href="http://example.com" class="text-info text-decoration-none">
+            гипперссылка example.com
+          </a>
+          <a href="https://example.com" class="text-info text-decoration-none">гипперссылка example.com c
+            https</a>
+          <a href="ftp://wikipedia.org" class="text-info text-decoration-none">ftp без авторизации</a>
+          <a href="ftp://admin:2206@wikipedia.org" class="text-info text-decoration-none">ftp с
+            авторизацией</a>
+          <a href="https://youtu.be/8R1zgn2iZVQ?t=105&lang=ru" class="text-info text-decoration-none">Cсылку
+            с двумя параметрами в URL</a>
+        </div>
+      </div>
+      <!-- таблица -->
+      <div class="card mt-3 mb-3 p-5 order-3 order-lg-2 table-responsive">
+
+        <h3 class="font-weight-lighter text-center text-dark">Таблица</h3>
+        <table class="table table-striped table-hover" id="table">
+          <thead>
+            <tr>
+              <th scope="col">№</th>
+              <th scope="col">Имя</th>
+              <th scope="col">Фамилия</th>
+              <th scope="col">Передача</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Ларисочка</td>
+              <td>Гузеева</td>
+              <td>Давай поженимся</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Ксения</td>
+              <td>Бородина</td>
+              <td>Дом-2</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Павел-Снежок</td>
+              <td>Воля</td>
+              <td>Импровизация</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- форма -->
+      <div class="card mt-3 mb-3 p-5 order-2 order-lg-3">
+
+        <h3 class="font-weight-lighter text-center text-dark">Форма</h3>
+        <form>
+          <div class="form-row" id="form">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="name@example.com">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Пароль</label>
+              <input type="password" class="form-control" id="inputPassword4"
+                placeholder="Пароль должен содержать более 8 символов">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Адрес</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Ваш адрес по прописке">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Адрес-2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Ваш адрес проживания">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputDate">Дата рождения</label>
+              <input type="date" class="form-control" id="inputDate" placeholder="ДД.ММ.ГГ">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">Кол-во товаров</label>
+              <select id="inputState" class="form-control">
+                <option selected>Выберете кол-во</option>
+                <option>1-5</option>
+                <option>6-10</option>
+                <option>11-15</option>
+                <option>16-20</option>
+                <option>Более</option>
+                <option>Без заказа</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Условия принимаю
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Отправить</button>
+        </form>
+        <p><a id="bottom"></a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- подвал -->
+  <footer class="footer" id="footer">
+    <div class="container-fluid">
+      <div class="footer_body">
+        <span class="text-muted">&copy;Права защищены</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
